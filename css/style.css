@@ -2,4 +2,48 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: whitesmoke;
+    padding: 20px 0;
+    display: flex;
+}
+
+.logo{
+    margin-left: 50px;
+    margin-right: 5px;
+}
+
+h1{
+    font-size: 20px;
+}
+.mainmenu {
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.mainmenu ul {
+    margin-left: auto;
+    padding-right: 30px;
+    list-style: none;
+}
+
+.mainmenu ul li {
+    display: inline-block;
+}
+
+.mainmenu ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
 }
