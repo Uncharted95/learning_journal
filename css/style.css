@@ -9,8 +9,7 @@ body {
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  background-color: #333;
-  color: whitesmoke;
+  color: #333;
   padding: 20px 20px;
   flex-wrap: wrap; 
 }
@@ -29,6 +28,7 @@ body {
 .mainmenu h1 {
   font-size: 18px; 
   margin: 0;
+  color: #333;
 }
 
 .mainmenu ul {
@@ -36,7 +36,8 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 15px;           
+  gap: 15px;
+  color: #333;           
 }
 
 .mainmenu ul li a {
@@ -44,4 +45,43 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
+  color: #333; 
+}
+
+.hero-image{
+    background-image: url("/images/hero-post.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    height: 300px;
+}
+
+
+.hero-text{
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    text-shadow: 2px 2px black;
+}
+
+.date{
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.hero-text h1,
+.hero-text p{
+    color: whitesmoke;
+    margin-top: 0;
+}
+
+.hero-text h1,
+.hero-text p:not(.date){
+    margin: 0;
+}
+
+.hero-text h1{
+    margin-bottom: 8px;
 }
