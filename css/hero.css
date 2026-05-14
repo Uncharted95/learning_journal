@@ -25,7 +25,6 @@ body {
   height: auto;
 }
 
-
 .mainmenu h1 {
   font-size: 18px; 
   margin: 0;
@@ -56,4 +55,105 @@ body {
     background-repeat: no-repeat;
     position: relative;
     height: 300px;
+}
+
+
+.hero-text{
+    position: absolute;
+    left: 3%;
+    top: 32%;
+    text-shadow: 2px 2px black;
+}
+
+.date{
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.hero-text h1,
+.hero-text p{
+    color: whitesmoke;
+    margin-top: 0;
+}
+
+.hero-text h1,
+.hero-text p:not(.date){
+    margin: 0;
+}
+
+.hero-text h1{
+    margin-bottom: 8px;
+}
+
+.post-image-1{
+    background-image: url("/images/post1.jpg");
+
+}
+
+.post-image-2{
+    background-image: url("/images/post2.jpg");
+}
+
+.post-image-3{
+    background-image: url("/images/post3.jpg");
+}
+
+.post-image-1,
+.post-image-2,
+.post-image-3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 232px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.post-text-1,
+.post-text-2,
+.post-text-3 {
+    width: 374px;
+    margin: 20px auto 0 auto;
+}
+
+.post-text-1 h1,
+.post-text-2 h1,
+.post-text-3 h1 {
+    margin: 10px 0;
+}
+
+.post-text-1 p,
+.post-text-2 p,
+.post-text-3 p {
+    line-height: 1.5;
+}
+
+.view-more{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px 0; 
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 5px 0; 
+}
+
+.footer-bold {
+    font-weight: 700; 
+}
+
+.footer-thin {
+    font-weight: 300; 
 }
