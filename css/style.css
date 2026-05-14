@@ -130,3 +130,30 @@ body {
 .post-text-3 p {
     line-height: 1.5;
 }
+
+.view-more{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px 0; 
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 5px 0; 
+}
+
+.footer-bold {
+    font-weight: 700; 
+}
+
+.footer-thin {
+    font-weight: 300; 
+}
