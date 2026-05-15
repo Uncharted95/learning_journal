@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 html, 
 body {
     margin: 0;
@@ -163,6 +166,10 @@ footer p {
 
 
 @media (min-width: 768px){
+
+    .mainmenu ul li a{
+        margin-right: 1.5rem;
+    }
     .flex-container{
         display: flex;
         flex-direction: row;
@@ -173,12 +180,14 @@ footer p {
     flex: 1;
     max-width: none;
     padding: 0 2rem;
+    margin-bottom: 0;
+    line-height: 1.5;
     }
 
     .main-text {
     max-width: 70rem;
-    margin: 1.875rem auto 0 auto;
-    padding: 0 2rem;
+    margin: 0.5rem auto 0 auto;
+    padding: 0 5rem;
     }
 
     h2{
@@ -215,6 +224,9 @@ footer p {
         padding: 0 2rem;
     }
 
+    footer{
+        text-align: center;
+    }
 
 
 }
