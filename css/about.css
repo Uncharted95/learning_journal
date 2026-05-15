@@ -215,6 +215,7 @@ footer p {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
         padding: 0 2rem;
+        margin-bottom: 1.25rem;
     }
 
     footer{
