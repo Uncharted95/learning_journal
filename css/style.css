@@ -100,9 +100,24 @@ body {
     background-image: url("/images/post3.jpg");
 }
 
+.post-image-4{
+    background-image: url("/images/post4.jpg");
+}
+
+.post-image-5{
+    background-image: url("/images/post5.jpg");
+}
+
+.post-image-6{
+    background-image: url("/images/post6.jpg");
+}
+
 .post-image-1,
 .post-image-2,
-.post-image-3{
+.post-image-3,
+.post-image-4,
+.post-image-5,
+.post-image-6{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +132,10 @@ body {
 
 .post-text-1,
 .post-text-2,
-.post-text-3 {
+.post-text-3,
+.post-text-4,
+.post-text-5,
+.post-text-6 {
     width: 100%;
     max-width: 23.375rem;
     margin: 1.25rem auto 0 auto;
@@ -125,15 +143,27 @@ body {
 
 .post-text-1 h1,
 .post-text-2 h1,
-.post-text-3 h1 {
+.post-text-3 h1,
+.post-text-4 h1,
+.post-text-5 h1,
+.post-text-6 h1 {
     margin: 0.625rem 0;
 }
 
 .post-text-1 p,
 .post-text-2 p,
-.post-text-3 p {
+.post-text-3 p,
+.post-text-4 p,
+.post-text-5 p,
+.post-text-6 p {
     line-height: 1.5;
     font-weight: 350;
+}
+
+.post-4,
+.post-5,
+.post-6{
+    display: none;
 }
 
 .view-more{
@@ -161,4 +191,39 @@ footer p {
 
 .footer-thin {
     font-weight: 300; 
+}
+
+
+@media (min-width: 768px){
+
+    .hero-image{
+        position: relative;
+        height: 25rem;
+}
+
+    .hero-text{
+        position: absolute;
+        left: 5%;
+        top: 62%;
+        text-shadow: 0.125rem 0.125rem black;
+}
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 0 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .view-more{
+        display: none;
+    }
+
+    .post-4,
+    .post-5,
+    .post-6{
+        display: block;
+    }
+
 }
