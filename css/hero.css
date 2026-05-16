@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 html, 
 body {
     margin: 0;
@@ -96,6 +99,12 @@ body {
     background-image: url("/images/post3.jpg");
 }
 
+h2{
+    text-align: center;
+    display: none;
+    margin-bottom: 0;
+}
+
 .post-image-1,
 .post-image-2,
 .post-image-3{
@@ -161,4 +170,46 @@ footer p {
 
 .footer-thin {
     font-weight: 300; 
+}
+
+@media (min-width: 768px){
+    .hero-text{
+        max-width: 60rem;
+        padding: 0 5rem;
+    }
+
+    .hero-image{
+        background-image: url("/images/hero-post.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 25rem;
+        width: 100%;
+        max-width: 55rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.875rem;
+        border-radius: 0.3125rem;
+    }
+
+    .main-text{
+        max-width: 60rem;
+        padding: 0 5rem;
+    }
+
+    h2{
+        display: block;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        padding: 0 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .view-more{
+        display: none;
+    }
 }
